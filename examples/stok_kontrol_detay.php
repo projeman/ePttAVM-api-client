@@ -14,7 +14,7 @@ use Epttavm\StokKontrolDetay;
 use Epttavm\Variants;
 
 try {
-	$a = ApiClient::init('https://exact.service.url/service?wsdl', 'username', 'password', ['debug'=>false]);
+	$a = ApiClient::init('https://ws.pttavm.com:93/service.svc/service', 'username', 'password', ['debug'=>false]);
 
 	//Birinci varyant
 	$v1 = Variants::create()
