@@ -5,7 +5,7 @@ use Epttavm\ApiClient;
 use Epttavm\Exception\EpaException;
 
 try {
-    $a = ApiClient::init('https://exact.service.url/service?wsdl', 'username', 'password', ['debug'=>false]);
+    $a = ApiClient::init('https://ws.pttavm.com:93/service.svc/service', 'username', 'password', ['debug'=>false]);
     
     $date1 = new DateTime('2018-01-01 00:00:00');
     $date2 = new DateTime(); // now()
